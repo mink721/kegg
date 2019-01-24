@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <!-- Title -->
+  <title>KoreaEgg1</title>
+
+  <!-- Required Meta Tags Always Come First -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="favicon.ico">
+
+  <!-- Google Fonts -->
+  <link href="//fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+
+
+  <!-- CSS Implementing Plugins -->
+  <link rel="stylesheet" href="assets/vendor/font-awesome/css/all.min.css">
+  <link rel="stylesheet" href="assets/vendor/hs-megamenu/src/hs.megamenu.css">
+  <link rel="stylesheet" href="assets/vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css">
+  <link rel="stylesheet" href="assets/vendor/custombox/dist/custombox.min.css">
+  <link rel="stylesheet" href="assets/vendor/animate.css/animate.min.css">
+  <link rel="stylesheet" href="assets/vendor/slick-carousel/slick/slick.css">
+  <link rel="stylesheet" href="documentation/assets/vendor/jquery-ui/themes/base/jquery-ui.min.css">
+  <link rel="stylesheet" href="documentation/assets/vendor/prism/prism.css">
+  <link rel="stylesheet" href="assets/vendor/bootstrap/bootstrap-slider.min.css">
+
+  <!-- CSS Space Template -->
+  <link rel="stylesheet" href="assets/css/theme.css">
+  
+  <!-- CSS Space Doc -->
+  <link rel="stylesheet" href="documentation/assets/css/starter.css">
+  
+  
+  <!--slider
+  <link rel="stylesheet" href="assets/vendor/jquery.mobile/slider.css">
+    -->
+  <link rel="stylesheet" href="assets/vendor/nouislider/nouislider.css">
+
+</head>
+
+<body>
+
+  <!-- ========== HEADER ========== --> 
+  <header id="header" class="u-header u-header--modern u-header--bordered u-header--bg-transparent u-header--white-nav-links u-header--sticky-top-lg">
+    <div class="u-header__section">
+      <div id="logoAndNav" class="container-fluid">
+        <!-- Nav -->
+        <nav class="navbar navbar-expand-lg u-header__navbar">
+          <!-- Logo -->
+          <div class="u-header__navbar-brand-wrapper">
+            <a class="navbar-brand u-header__navbar-brand" href="index.html" aria-label="Space">
+              <img class="u-header__navbar-brand-default" src="assets/svg/logos/logo-white.svg" alt="Logo">
+              <img class="u-header__navbar-brand-on-scroll" src="assets/svg/logos/logo.svg" alt="Logo">
+              <img class="u-header__navbar-brand-mobile" src="assets/svg/logos/logo-short.svg" alt="Logo">
+            </a>
+            
+          </div>
+          <!-- End Logo -->
+
+          <!-- Responsive Toggle Button -->
+          <button type="button" class="navbar-toggler btn u-hamburger u-header__hamburger"
+                  aria-label="Toggle navigation"
+                  aria-expanded="false"
+                  aria-controls="navBar"
+                  data-toggle="collapse"
+                  data-target="#navBar">
+            <span class="d-none d-sm-inline-block">Menu</span>
+            <span id="hamburgerTrigger" class="u-hamburger__box ml-3">
+              <span class="u-hamburger__inner"></span>
+            </span>
+          </button>
+          <!-- End Responsive Toggle Button -->
+
+          <!-- Navigation -->
+          <div id="navBar" class="collapse navbar-collapse u-header__navbar-collapse py-0">
+            <ul class="navbar-nav u-header__navbar-nav">
+              <!-- Home -->
+              <li class="nav-item u-header__nav-item">
+                <a class="nav-link u-header__nav-link" href="index.html">
+                  Home
+                </a>
+			  </li>
+              <!-- End Home -->
+              <!-- Works -->
+              <li class="nav-item u-header__nav-item">
+                <a class="nav-link u-header__nav-link" href="info.html">
+                  	난가정보
+                </a>
+              </li>
+              <!-- End Works -->
+              <!-- Blog -->
+              <li class="nav-item u-header__nav-item">
+                <a class="nav-link u-header__nav-link" href="board.html">
+                  	게시판
+                </a>
+              </li>
+              <!-- End Blog -->
+              <!-- 로그인 버튼 -->       
+             <li class="nav-item u-header__nav-item-btn u-header__navbar-v-divider navbar-collapse-xs d-none d-lg-block" >
+               <a class="btn btn-sm btn-primary" href="javascript:;" role="button">
+                 <span class="fa fa-user mr-1"> 로그인/회원가입</span>
+               </a>
+             </li>
+             <!-- End 로그인 버튼 -->
+            </ul>
+          </div>
+          <!-- End Navigation -->
+          
+          <ul class="navbar-nav flex-row u-header__secondary-nav">
+            <!-- Responsive 로그인 Button -->
+             <li class="nav-item u-header__navbar-icon-wrapper u-header__navbar-icon navbar-toggler">
+              <a class="btn btn-xs btn-icon btn-text-dark" href="javascript:;" role="button" >
+               <span class="fa fa-user btn-icon__inner"></span>
+              </a>
+             </li>
+	        <!-- End Responsive 로그인 Button -->
+            <!-- Shopping Cart -->
+            <li class="nav-item u-header__navbar-icon-wrapper u-header__navbar-icon">
+              <a id="shoppingCartDropdownInvoker" class="btn btn-xs btn-icon btn-text-dark" href="javascript:;" role="button"
+                      aria-controls="shoppingCartDropdown"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                      data-unfold-event="click"
+                      data-unfold-target="#shoppingCartDropdown"
+                      data-unfold-type="css-animation"
+                      data-unfold-duration="300"
+                      data-unfold-delay="300"
+                      data-unfold-hide-on-scroll="true"
+                      data-unfold-animation-in="slideInUp"
+                      data-unfold-animation-out="fadeOut">
+                <span class="fa fa-shopping-cart btn-icon__inner"></span>
+              </a>
+
+              <div id="shoppingCartDropdown" class="u-unfold u-unfold--cart text-center border rounded-0 right-0 p-7" aria-labelledby="shoppingCartDropdownInvoker" style="min-width: 250px;">
+                <span class="u-icon u-icon--primary u-icon--md rounded-circle mb-3">
+                  <span class="fa fa-shopping-basket u-icon__inner"></span>
+                </span>
+                <span class="d-block">Your Cart is Empty</span>
+              </div>
+            </li>
+            <!-- End Shopping Cart -->
+          </ul>
+        </nav>
+        <!-- End Nav -->
+      </div>
+    </div>
+  </header>
+  <!-- ========== END HEADER ========== -->
+ 
+  <!-- ========== MAIN CONTENT ========== -->
+  <main id="content" role="main">
+    <!-- Hero Section -->
+    <div class="gradient-overlay-half-dark-v3 bg-img-hero" style="background-image: url(assets/img/test/0.jpg);">
+		  <!-- Main Content --> 
+		  <div class="d-lg-flex align-items-lg-center height-45vh--lg">
+		    <div class="container space-1 space-0--lg mt-lg-8">
+		      <div class="row justify-content-lg-between align-items-lg-center">
+		        <div class="col-lg-12">
+		          <!-- Signup Form -->
+		          <div class="bg-white shadow-sm rounded p-3">
+		            <form class="js-validate">
+		              <!-- Input -->
+		              <div class="js-form-message mb-3">
+		                <div class="js-focus-state input-group input-group form">
+			                <div class="custom-control custom-radio custom-control-inline form-selector">
+					          <input type="checkbox" id="giftCardSelector50" name="giftCardSelectorName" class="custom-control-input form-selector__input">
+					          <label class="custom-control-label form-selector__label" for="giftCardSelector50">왕란</label>
+					        </div>
+					        <div class="custom-control custom-radio custom-control-inline form-selector">
+					          <input type="checkbox" id="giftCardSelector100" name="giftCardSelectorName" class="custom-control-input form-selector__input">
+					          <label class="custom-control-label form-selector__label" for="giftCardSelector100">대란</label>
+					        </div>
+					        <div class="custom-control custom-radio custom-control-inline form-selector">
+					          <input type="checkbox" id="giftCardSelector150" name="giftCardSelectorName" class="custom-control-input form-selector__input">
+					          <label class="custom-control-label form-selector__label" for="giftCardSelector150">특란</label>
+					        </div>
+					        <div class="custom-control custom-radio custom-control-inline form-selector">
+					          <input type="checkbox" id="giftCardSelector200" name="giftCardSelectorName" class="custom-control-input form-selector__input">
+					          <label class="custom-control-label form-selector__label" for="giftCardSelector200">중란</label>
+					        </div>
+					        <div class="custom-control custom-radio custom-control-inline form-selector">
+					          <input type="checkbox" id="giftCardSelector250" name="giftCardSelectorName" class="custom-control-input form-selector__input">
+					          <label class="custom-control-label form-selector__label" for="giftCardSelector250">소란</label>
+					        </div>
+					        <div class="custom-control-inline">
+			                    <a class="u-icon u-icon--dark rounded-circle" href="#">
+								  <span class="fa fa-map-marker-alt u-icon__inner"></span>
+								</a>
+	                    		 <input type="text" class="form-control form__input" name="username" 
+						             placeholder="건물명, 도로명, 지번으로 검색하세요."
+						             aria-label="건물명, 도로명, 지번으로 검색하세요.">
+					        </div>
+					        <div class="custom-control">
+							      <input type="text" class="form__input" id="slider1">
+							      <div id="slider" class="col-10"></div>
+							      <input type="text" class="form__input" id="slider2">
+					        </div>
+		              		<button type="submit" class="btn  btn-primary">검색</button>
+		                </div>
+		              </div>
+		              <!-- End Input -->
+		              
+		            </form>
+		          </div>
+		          <!-- End Signup Form -->
+		        </div>
+		        
+		        <div class="col-lg-5 mb-7 mb-lg-0">
+		          <!-- Title -->
+		          <!-- <span class="d-block text-white text-uppercase mb-2">코리아에그</span> -->
+		          <!-- <h5 class="display-4 font-size-48--md-down text-white mb-0">코리아에그</h5> -->
+		          <!-- End Title -->
+		        </div>
+		      </div>
+		    </div>
+		  </div>
+		  <!-- End Main Content -->
+		</div>
+		
+<!-- End Hero Section -->
+
+
+<!-- 블로그 -->
+<!-- News Section -->
+    <div class="bg-light">
+      <div class="container space-1 space-2--lg">
+		
+		
+		<div class="card-deck d-block d-lg-flex">
+          
+         
+          <article class="card border-0 mb-2">
+           <a class="text-dark" href="product.html"> 
+            <div class="card-body row align-items-stretch no-gutters p-0">
+              <!-- News Blog Card -->
+              <div class="col-3 card-img-left border border-right-0">
+              	<div class="p-2"> <img alt="" src="assets/img/100x100/img1.jpg"> </div>
+              </div>
+              <div class="col-9 border border-left-0 rounded-right">
+                <div class="p-1">
+                  	가게1
+                </div>
+              </div>              
+            </div>
+          </a>
+            <!-- End News Blog Card -->
+          </article>
+          
+          <article class="card border-0 mb-2">
+          <a class="text-dark" href="product.html"> 
+            <div class="card-body row align-items-stretch no-gutters p-0">
+              <!-- News Blog Card -->
+              <div class="col-3 card-img-left border border-right-0">
+              	<div class="p-2"> <img alt="" src="assets/img/100x100/img2.jpg"> </div>
+              </div>
+              <div class="col-9 border border-left-0 rounded-right">
+                <div class="p-1">
+                  	가게2
+                </div>
+              </div>              
+            </div>
+            </a>
+            <!-- End News Blog Card -->
+          </article>
+        </div>
+        
+        <div class="card-deck d-block d-lg-flex">
+          <article class="card border-0 mb-2">
+          <a class="text-dark" href="product.html"> 
+            <div class="card-body row align-items-stretch no-gutters p-0">
+              <!-- News Blog Card -->
+              <div class="col-3 card-img-left border border-right-0">
+              	<div class="p-2"> <img alt="" src="assets/img/100x100/img3.jpg"> </div>
+              </div>
+              <div class="col-9 border border-left-0 rounded-right">
+                <div class="p-1">
+                  	가게3
+                </div>
+              </div>              
+            </div>
+            </a>
+            <!-- End News Blog Card -->
+          </article>
+          
+          <article class="card border-0 mb-2">
+          <a class="text-dark" href="product.html"> 
+            <div class="card-body row align-items-stretch no-gutters p-0">
+              <!-- News Blog Card -->
+              <div class="col-3 card-img-left border border-right-0">
+              	<div class="p-2"> <img alt="" src="assets/img/100x100/img4.jpg"> </div>
+              </div>
+              <div class="col-9 border border-left-0 rounded-right">
+                <div class="p-1">
+                  	가게4
+                </div>
+              </div>              
+            </div>
+            </a>
+            <!-- End News Blog Card -->
+          </article>
+        </div>
+        <div class="card-deck d-block d-lg-flex">
+          <article class="card border-0 mb-2">
+          <a class="text-dark" href="product.html"> 
+            <div class="card-body row align-items-stretch no-gutters p-0">
+              <!-- News Blog Card -->
+              <div class="col-3 card-img-left border border-right-0">
+              	<div class="p-2"> <img alt="" src="assets/img/100x100/img5.jpg"> </div>
+              </div>
+              <div class="col-9 border border-left-0 rounded-right">
+                <div class="p-1">
+                  	가게5
+                </div>
+              </div>              
+            </div>
+            </a>
+            <!-- End News Blog Card -->
+          </article>
+          
+          <article class="card border-0 mb-2">
+          <a class="text-dark" href="product.html"> 
+            <div class="card-body row align-items-stretch no-gutters p-0">
+              <!-- News Blog Card -->
+              <div class="col-3 card-img-left border border-right-0">
+              	<div class="p-2"> <img alt="" src="assets/img/100x100/img6.jpg"> </div>
+              </div>
+              <div class="col-9 border border-left-0 rounded-right">
+                <div class="p-1">
+                  	가게6
+                </div>
+              </div>              
+            </div>
+            </a>
+            <!-- End News Blog Card -->
+          </article> 
+        </div>
+<div class="card-deck d-block d-lg-flex">
+          <article class="card border-0 mb-2">
+          <a class="text-dark" href="product.html"> 
+            <div class="card-body row align-items-stretch no-gutters p-0">
+              <!-- News Blog Card -->
+              <div class="col-3 card-img-left border border-right-0">
+              	<div class="p-2"> <img alt="" src="assets/img/100x100/img1.jpg"> </div>
+              </div>
+              <div class="col-9 border border-left-0 rounded-right">
+                <div class="p-1">
+                  	가게1
+                </div>
+              </div>              
+            </div>
+            </a>
+            <!-- End News Blog Card -->
+          </article>
+          
+          <article class="card border-0 mb-2">
+          <a class="text-dark" href="product.html"> 
+            <div class="card-body row align-items-stretch no-gutters p-0">
+              <!-- News Blog Card -->
+              <div class="col-3 card-img-left border border-right-0">
+              	<div class="p-2"> <img alt="" src="assets/img/100x100/img2.jpg"> </div>
+              </div>
+              <div class="col-9 border border-left-0 rounded-right">
+                <div class="p-1">
+                  	가게2
+                </div>
+              </div>              
+            </div>
+            </a>
+            <!-- End News Blog Card -->
+          </article>
+        </div>
+        
+        <div class="card-deck d-block d-lg-flex">
+          <article class="card border-0 mb-2">
+          <a class="text-dark" href="product.html"> 
+            <div class="card-body row align-items-stretch no-gutters p-0">
+              <!-- News Blog Card -->
+              <div class="col-3 card-img-left border border-right-0">
+              	<div class="p-2"> <img alt="" src="assets/img/100x100/img3.jpg"> </div>
+              </div>
+              <div class="col-9 border border-left-0 rounded-right">
+                <div class="p-1">
+                  	가게3
+                </div>
+              </div>              
+            </div>
+            </a>
+            <!-- End News Blog Card -->
+          </article>
+          
+          <article class="card border-0 mb-2">
+          <a class="text-dark" href="product.html"> 
+            <div class="card-body row align-items-stretch no-gutters p-0">
+              <!-- News Blog Card -->
+              <div class="col-3 card-img-left border border-right-0">
+              	<div class="p-2"> <img alt="" src="assets/img/100x100/img4.jpg"> </div>
+              </div>
+              <div class="col-9 border border-left-0 rounded-right">
+                <div class="p-1">
+                  	가게4
+                </div>
+              </div>              
+            </div>
+            </a>
+            <!-- End News Blog Card -->
+          </article>
+        </div>
+        <div class="card-deck d-block d-lg-flex">
+          <article class="card border-0 mb-2">
+          <a class="text-dark" href="product.html"> 
+            <div class="card-body row align-items-stretch no-gutters p-0">
+              <!-- News Blog Card -->
+              <div class="col-3 card-img-left border border-right-0">
+              	<div class="p-2"> <img alt="" src="assets/img/100x100/img5.jpg"> </div>
+              </div>
+              <div class="col-9 border border-left-0 rounded-right">
+                <div class="p-1">
+                  	가게5
+                </div>
+              </div>              
+            </div>
+            </a>
+            <!-- End News Blog Card -->
+          </article>
+          
+          <article class="card border-0 mb-2">
+          <a class="text-dark" href="product.html"> 
+            <div class="card-body row align-items-stretch no-gutters p-0">
+              <!-- News Blog Card -->
+              <div class="col-3 card-img-left border border-right-0">
+              	<div class="p-2"> <img alt="" src="assets/img/100x100/img6.jpg"> </div>
+              </div>
+              <div class="col-9 border border-left-0 rounded-right">
+                <div class="p-1">
+                  	가게6
+                </div>
+              </div>              
+            </div>
+            </a>
+            <!-- End News Blog Card -->
+          </article> 
+        </div>
+
+
+
+
+
+
+      </div>
+    </div>
+    <!-- End News Section -->
+<!-- 블로그 끝 -->
+
+
+<!-- Features Section -->
+<div class="bg-light">
+  <div class="container space-1 space-1--lg">
+    <div class="card-deck d-block d-md-flex text-center">
+      <!-- Card -->
+      <div class="card shadow-sm mb-5 mb-md-0">
+        <div class="card-header">
+        	난가예보
+        </div>
+        <div class="card-body">
+          <div class="mb-4">
+          	1 2 3 4 5
+          </div>
+        </div>
+      </div>
+      <!-- End Card -->
+
+      <!-- Card -->
+      <div class="card shadow-sm mb-5 mb-md-0">
+        <div class="card-header">
+        	계란생산이력조회
+        </div>
+        <div class="card-body">
+          <div class="mb-4">
+          	<select class="custom-select"></select>
+          </div>
+        </div>
+      </div>
+      <!-- End Card -->
+
+      <!-- Card -->
+      <div class="card shadow-sm">
+        <div class="card-header">
+        	구매요청
+        </div>
+        <div class="card-body">
+        </div>
+      </div>
+      <!-- End Card -->
+    </div>
+  </div>
+</div>
+<!-- End Features Section -->
+
+
+
+
+<!-- ========== FOOTER ========== -->
+<!-- <div class="text-center u-divider-wrapper my-3">
+  <span class="u-divider u-divider--xs"></span>
+</div> -->
+
+<footer class="bg-dark">
+  <div class="container space-1">
+    <div class="row justify-content-md-between">
+      <div class="col-6 col-md-3 col-lg-2 order-lg-3 mb-7 mb-lg-0">
+        <h3 class="h6 text-white mb-3">회사소개</h3>
+      </div>
+
+      <div class="col-6 col-md-3 col-lg-2 order-lg-4 mb-7 mb-lg-0">
+        <h3 class="h6 text-white mb-3">공지사항</h3>
+      </div>
+
+      <div class="col-6 col-md-3 col-lg-2 order-lg-5 mb-7 mb-lg-0">
+        <h3 class="h6 text-white mb-3">이용약관</h3>
+      </div>
+
+      <div class="col-6 col-md-3 col-lg-2 order-lg-6 mb-7 mb-lg-0">
+        <h3 class="h6 text-white mb-3">개인정보처리방침</h3>
+      </div>
+    </div>
+    <div class="row">
+    <div class="order-lg-1 d-flex align-items-start flex-column">
+        <!-- Logo -->
+        <!-- <a class="d-inline-block mb-5" href="index.html" aria-label="Space">
+          <img src="assets/svg/logos/logo-short-white.svg" alt="Logo" style="width: 40px; max-width: 100%;">
+        </a> -->
+        <!-- End Logo -->
+        <p class="small text-muted">계란유통전문 코리아에그
+경기도 수원시 권선구 권선동 1039-6
+대표자 : 강병열 사업자등록번호:130-90-14617 통신판매업신고:2014-수원권선-0346 (031) 297-8243 kbre2000@gmail.com</p>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- ========== END FOOTER ========== -->
+  </main>
+    <!-- ========== END MAIN CONTENT ========== -->
+
+  <!-- Go to Top -->
+  <a class="js-go-to u-go-to" href="#"
+    data-position='{"bottom": 15, "right": 15 }'
+    data-type="fixed"
+    data-offset-top="400"
+    data-compensation="#header"
+    data-show-effect="slideInUp"
+    data-hide-effect="slideOutDown">
+    <span class="fa fa-arrow-up u-go-to__inner"></span>
+  </a>
+  <!-- End Go to Top -->
+
+  <!-- JS Global Compulsory -->
+  <script src="assets/vendor/jquery/dist/jquery.min.js"></script>
+  <script src="assets/vendor/jquery-migrate/dist/jquery-migrate.min.js"></script>
+  <script src="assets/vendor/popper.js/dist/umd/popper.min.js"></script>
+  <script src="assets/vendor/bootstrap/bootstrap.min.js"></script>
+  
+
+  <!-- JS Implementing Plugins -->
+  <script src="assets/vendor/hs-megamenu/src/hs.megamenu.js"></script>
+  <script src="assets/vendor/jquery-validation/dist/jquery.validate.min.js"></script>
+  <script src="assets/vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script src="assets/vendor/custombox/dist/custombox.min.js"></script>
+  <script src="assets/vendor/custombox/dist/custombox.legacy.min.js"></script>
+  <script src="assets/vendor/bootstrap/bootstrap-slider.min.js"></script>
+
+  <!-- JS Space -->
+  <script src="assets/js/hs.core.js"></script>
+  <script src="assets/js/components/hs.header.js"></script>
+  <script src="assets/js/components/hs.unfold.js"></script>
+  <script src="assets/js/components/hs.validation.js"></script>
+  <script src="assets/js/helpers/hs.focus-state.js"></script>
+  <script src="assets/js/components/hs.malihu-scrollbar.js"></script>
+  <script src="assets/js/components/hs.modal-window.js"></script>
+  <script src="assets/js/components/hs.show-animation.js"></script>
+  <script src="assets/js/components/hs.go-to.js"></script>
+
+  <script src="assets/vendor/nouislider/nouislider.js"></script>
+
+<!-- JS Plugins Init. -->
+<script>
+    $(window).on('load', function () {
+      // initialization of HSMegaMenu component
+      $('.js-mega-menu').HSMegaMenu({
+        event: 'hover',
+        pageContainer: $('.container'),
+        breakpoint: 991,
+        hideTimeOut: 0
+      });
+    });
+
+    $(document).on('ready', function () {
+      // initialization of header
+      $.HSCore.components.HSHeader.init($('#header'));
+
+      // initialization of unfold component
+      $.HSCore.components.HSUnfold.init($('[data-unfold-target]'), {
+        afterOpen: function () {
+          $(this).find('input[type="search"]').focus();
+        }
+      });
+
+      // initialization of form validation
+      $.HSCore.components.HSValidation.init('.js-validate', {
+        rules: {
+          confirmPassword: {
+            equalTo: '#password'
+          }
+        }
+      });
+
+      // initialization of forms
+      $.HSCore.helpers.HSFocusState.init();
+
+      // initialization of malihu scrollbar
+      $.HSCore.components.HSMalihuScrollBar.init($('.js-scrollbar'));
+
+      // initialization of autonomous popups
+      $.HSCore.components.HSModalWindow.init('[data-modal-target]', '.js-signup-account', {
+        autonomous: true
+      });
+
+      // initialization of show animations
+      $.HSCore.components.HSShowAnimation.init('.js-animation-link');
+
+      // initialization of go to
+      $.HSCore.components.HSGoTo.init('.js-go-to');
+
+    });
+    
+	    var nonLinearSlider = document.getElementById('slider');
+
+	    noUiSlider.create(nonLinearSlider, {
+	        connect: true,
+	        behaviour: 'tap',
+	        start: [0, 10000],
+	        range: {
+	            // Starting at 500, step the value by 500,
+	            // until 4000 is reached. From there, step by 1000.
+	            'min': [0,100],
+	            '10%': [500, 500],
+	            '50%': [4000, 1000],
+	            'max': [10000]
+	        }
+	    });
+	    
+	    var nodes = [0,1];
+// 	        document.getElementById('lower-value'), // 0
+// 	        document.getElementById('upper-value')  // 1
+// 	    ];
+
+	    // Display the slider value and how far the handle moved
+	    // from the left edge of the slider.
+	    nonLinearSlider.noUiSlider.on('update', function (values, handle, unencoded, isTap, positions) {
+	    	if (handle == 0) {
+	    	$("#slider1").val(values[handle]);
+			} else {
+	    	$("#slider2").val(values[handle]);
+			}
+	        //nodes[handle].innerHTML = values[handle] + ', ' + positions[handle].toFixed(2) + '%';
+	    });
+  </script>
+
+</body>
+</html>
