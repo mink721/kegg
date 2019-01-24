@@ -155,63 +155,124 @@
     <div class="gradient-overlay-half-dark-v3 bg-img-hero" style="background-image: url(assets/img/test/0.jpg);">
 		  <!-- Main Content --> 
 		  <div class="d-lg-flex align-items-lg-center height-45vh--lg">
-		    <div class="container space-1 space-0--lg mt-lg-8">
-		      <div class="row justify-content-lg-between align-items-lg-center">
-		        <div class="col-lg-12">
-		          <!-- Signup Form -->
-		          <div class="bg-white shadow-sm rounded p-3">
-		            <form class="js-validate">
-		              <!-- Input -->
-		              <div class="js-form-message mb-3">
+
+              <!-- Hire Us Form -->
+              <div class="container space-1 space-0--lg mt-lg-8">
+                  <form class="js-validate w-lg-75 px-3 px-sm-9 mx-lg-auto justify-content-lg-between align-items-lg-center row">
+                      <div class="col-lg-12">
+                          <!-- Signup Form -->
+                          <div class="bg-white shadow-sm rounded p-3">
+                              <form class="js-validate">
+                                  <!-- Input Form -->
+                                  <div class="row align-items-center">
+                                      <div class="d-none d-md-block col-sm-2">
+                                          <label class="h6 small d-block text-uppercase mb-3 mb-lg-0">종류</label>
+                                      </div>
+                                      <div class="col-12 col-sm-10">
+                                          <select class="custom-select">
+                                              <option selected="">전체</option>
+                                              <option>왕란</option>
+                                              <option>대란</option>
+                                              <option>특란</option>
+                                              <option>중란</option>
+                                              <option>소란</option>
+                                          </select>
+                                      </div>
+                                  </div>
+                                  <hr class="my-2">
+                                  <div class="row align-items-center">
+                                      <div class="d-none d-md-block col-sm-2">
+                                          <label class="h6 small d-block mb-3 mb-lg-0">지역</label>
+                                      </div>
+                                      <div class="col-12 col-sm-10 input-group form">
+                                          <div class="input-group-prepend form__prepend">
+                                              <button type="button" class="btn btn-primary">
+                                                  <i class="fas fa-paper-plane"></i>
+                                              </button>
+                                          </div>
+                                          <input type="text" class="form-control form__input" placeholder="Default example with button" aria-label="Default example with button" aria-describedby="inputGroup-sizing-default">
+                                      </div>
+                                  </div>
+                                  <hr class="my-2">
+                                  <div class="row align-items-center">
+                                      <div class="d-none d-md-block col-sm-2">
+                                          <label class="h6 small d-block mb-3 mb-lg-0">지역2</label>
+                                      </div>
+                                      <div class="col-12 col-sm-10">
+                                          <select class="custom-select">
+                                              <option selected="">전국</option>
+                                              <option>서울</option>
+                                              <option>대전</option>
+                                              <option>대구</option>
+                                              <option>부산</option>
+                                              <option>경기</option>
+                                          </select>
+                                      </div>
+                                  </div>
+                                  <hr class="my-2">
+                                  <!--<div class="row">
+                                      <div class="col-2">
+                                          <label class="h6 small d-block text-uppercase mb-3 mb-lg-0">수량</label>
+                                      </div>
+                                      <div class="col-1">
+                                          <input type="text" id="slider1" class="form-control form__input">
+                                      </div>
+                                      <div class="col-8">
+                                          <div id="slider" ></div>
+                                      </div>
+                                      <div class="col-1">
+                                          <input type="text" id="slider2" class="form-control form__input">
+                                      </div>
+                                  </div>-->
+                                  <div class="row align-items-center">
+                                      <div class="d-none d-md-block col-sm-2">
+                                          <label class="h6 small d-block text-uppercase mb-3 mb-lg-0" for="customRange3">최저수량</label>
+                                      </div>
+                                      <div class="col-3 col-sm-2">
+                                          <input type="text" class="form-control form__input">
+                                      </div>
+                                      <div class="col-9 col-sm-8">
+                                          <input type="range" class="custom-range" min="0" max="5" step="0.5" id="customRange3" />
+                                      </div>
+                                  </div>
+                              </form>
+                          </div>
+                      </div>
+                                  <!-- End Input Form -->
+                  </form>
+              </div>
+              <!-- End Hire Us Form -->
+
+		              <!--<div class="js-form-message mb-3">
 		                <div class="js-focus-state input-group input-group form">
-			                <div class="custom-control custom-radio custom-control-inline form-selector">
-					          <input type="checkbox" id="giftCardSelector50" name="giftCardSelectorName" class="custom-control-input form-selector__input">
-					          <label class="custom-control-label form-selector__label" for="giftCardSelector50">왕란</label>
-					        </div>
-					        <div class="custom-control custom-radio custom-control-inline form-selector">
-					          <input type="checkbox" id="giftCardSelector100" name="giftCardSelectorName" class="custom-control-input form-selector__input">
-					          <label class="custom-control-label form-selector__label" for="giftCardSelector100">대란</label>
-					        </div>
-					        <div class="custom-control custom-radio custom-control-inline form-selector">
-					          <input type="checkbox" id="giftCardSelector150" name="giftCardSelectorName" class="custom-control-input form-selector__input">
-					          <label class="custom-control-label form-selector__label" for="giftCardSelector150">특란</label>
-					        </div>
-					        <div class="custom-control custom-radio custom-control-inline form-selector">
-					          <input type="checkbox" id="giftCardSelector200" name="giftCardSelectorName" class="custom-control-input form-selector__input">
-					          <label class="custom-control-label form-selector__label" for="giftCardSelector200">중란</label>
-					        </div>
-					        <div class="custom-control custom-radio custom-control-inline form-selector">
-					          <input type="checkbox" id="giftCardSelector250" name="giftCardSelectorName" class="custom-control-input form-selector__input">
-					          <label class="custom-control-label form-selector__label" for="giftCardSelector250">소란</label>
-					        </div>
-					        <div class="custom-control-inline">
-			                    <a class="u-icon u-icon--dark rounded-circle" href="#">
-								  <span class="fa fa-map-marker-alt u-icon__inner"></span>
-								</a>
-	                    		 <input type="text" class="form-control form__input" name="username" 
-						             placeholder="건물명, 도로명, 지번으로 검색하세요."
-						             aria-label="건물명, 도로명, 지번으로 검색하세요.">
-					        </div>
-					        <div class="custom-control">
-							      <input type="text" class="form__input" id="slider1">
-							      <div id="slider" class="col-10"></div>
-							      <input type="text" class="form__input" id="slider2">
-					        </div>
-		              		<button type="submit" class="btn  btn-primary">검색</button>
-		                </div>
-		              </div>
+                            <div class="clearfix"></div>
+                            <div class="col-md-7 custom-control-inline">
+                                <div class="input-group-prepend form__prepend">
+                                    <button type="button" class="btn btn-primary">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                    </button>
+                                    <input type="text" class="form-control form__input" placeholder="건물명, 도로명, 지번으로 검색하세요." aria-label="건물명, 도로명, 지번으로 검색하세요." aria-describedby="inputGroup-sizing-default">
+                                </div>
+                            </div>
+                            <div class="col-12 custom-control-inline">
+                                <label for="">수량</label>
+                                    <input type="text" class="col-1" id="slider1">
+                                    <div id="slider" class="col-7"></div>
+                                    <input type="text" class="col-1" id="slider2">
+                            </div>
+                            <div class="col-12 custom-control-inline">
+                                <label for="">금액</label>
+                                    <input type="text" class="col-1" id="slider3">
+                                    <div id="slider2" class="col-7"></div>
+                                    <input type="text" class="col-1" id="slider4">
+                            </div>
+                            <div class="col-2">
+                                <button type="submit" class="btn  btn-primary">검색</button>
+                            </div>
+                        </div>
+		              </div>-->
 		              <!-- End Input -->
-		              
-		            </form>
-		          </div>
 		          <!-- End Signup Form -->
-		        </div>
-		        
-		        <div class="col-lg-5 mb-7 mb-lg-0">
-		          <!-- Title -->
-		          <!-- <span class="d-block text-white text-uppercase mb-2">코리아에그</span> -->
-		          <!-- <h5 class="display-4 font-size-48--md-down text-white mb-0">코리아에그</h5> -->
-		          <!-- End Title -->
 		        </div>
 		      </div>
 		    </div>
@@ -222,236 +283,290 @@
 <!-- End Hero Section -->
 
 
-<!-- 블로그 -->
 <!-- News Section -->
-    <div class="bg-light">
-      <div class="container space-1 space-2--lg">
-		
-		
-		<div class="card-deck d-block d-lg-flex">
-          
-         
-          <article class="card border-0 mb-2">
-           <a class="text-dark" href="product.html"> 
-            <div class="card-body row align-items-stretch no-gutters p-0">
-              <!-- News Blog Card -->
-              <div class="col-3 card-img-left border border-right-0">
-              	<div class="p-2"> <img alt="" src="assets/img/100x100/img1.jpg"> </div>
+      <div class="container space-1 space-1--lg">
+          <div class="row mb-1">
+              <div class="col-sm-10">
+                  <div class="position-relative">
+                      <p class="bg-white content-centered-y mb-0">00개의 계란을 검색하였습니다.</p>
+                  </div>
               </div>
-              <div class="col-9 border border-left-0 rounded-right">
-                <div class="p-1">
-                  	가게1
-                </div>
-              </div>              
-            </div>
-          </a>
-            <!-- End News Blog Card -->
-          </article>
-          
-          <article class="card border-0 mb-2">
-          <a class="text-dark" href="product.html"> 
-            <div class="card-body row align-items-stretch no-gutters p-0">
-              <!-- News Blog Card -->
-              <div class="col-3 card-img-left border border-right-0">
-              	<div class="p-2"> <img alt="" src="assets/img/100x100/img2.jpg"> </div>
-              </div>
-              <div class="col-9 border border-left-0 rounded-right">
-                <div class="p-1">
-                  	가게2
-                </div>
-              </div>              
-            </div>
-            </a>
-            <!-- End News Blog Card -->
-          </article>
-        </div>
-        
-        <div class="card-deck d-block d-lg-flex">
-          <article class="card border-0 mb-2">
-          <a class="text-dark" href="product.html"> 
-            <div class="card-body row align-items-stretch no-gutters p-0">
-              <!-- News Blog Card -->
-              <div class="col-3 card-img-left border border-right-0">
-              	<div class="p-2"> <img alt="" src="assets/img/100x100/img3.jpg"> </div>
-              </div>
-              <div class="col-9 border border-left-0 rounded-right">
-                <div class="p-1">
-                  	가게3
-                </div>
-              </div>              
-            </div>
-            </a>
-            <!-- End News Blog Card -->
-          </article>
-          
-          <article class="card border-0 mb-2">
-          <a class="text-dark" href="product.html"> 
-            <div class="card-body row align-items-stretch no-gutters p-0">
-              <!-- News Blog Card -->
-              <div class="col-3 card-img-left border border-right-0">
-              	<div class="p-2"> <img alt="" src="assets/img/100x100/img4.jpg"> </div>
-              </div>
-              <div class="col-9 border border-left-0 rounded-right">
-                <div class="p-1">
-                  	가게4
-                </div>
-              </div>              
-            </div>
-            </a>
-            <!-- End News Blog Card -->
-          </article>
-        </div>
-        <div class="card-deck d-block d-lg-flex">
-          <article class="card border-0 mb-2">
-          <a class="text-dark" href="product.html"> 
-            <div class="card-body row align-items-stretch no-gutters p-0">
-              <!-- News Blog Card -->
-              <div class="col-3 card-img-left border border-right-0">
-              	<div class="p-2"> <img alt="" src="assets/img/100x100/img5.jpg"> </div>
-              </div>
-              <div class="col-9 border border-left-0 rounded-right">
-                <div class="p-1">
-                  	가게5
-                </div>
-              </div>              
-            </div>
-            </a>
-            <!-- End News Blog Card -->
-          </article>
-          
-          <article class="card border-0 mb-2">
-          <a class="text-dark" href="product.html"> 
-            <div class="card-body row align-items-stretch no-gutters p-0">
-              <!-- News Blog Card -->
-              <div class="col-3 card-img-left border border-right-0">
-              	<div class="p-2"> <img alt="" src="assets/img/100x100/img6.jpg"> </div>
-              </div>
-              <div class="col-9 border border-left-0 rounded-right">
-                <div class="p-1">
-                  	가게6
-                </div>
-              </div>              
-            </div>
-            </a>
-            <!-- End News Blog Card -->
-          </article> 
-        </div>
-<div class="card-deck d-block d-lg-flex">
-          <article class="card border-0 mb-2">
-          <a class="text-dark" href="product.html"> 
-            <div class="card-body row align-items-stretch no-gutters p-0">
-              <!-- News Blog Card -->
-              <div class="col-3 card-img-left border border-right-0">
-              	<div class="p-2"> <img alt="" src="assets/img/100x100/img1.jpg"> </div>
-              </div>
-              <div class="col-9 border border-left-0 rounded-right">
-                <div class="p-1">
-                  	가게1
-                </div>
-              </div>              
-            </div>
-            </a>
-            <!-- End News Blog Card -->
-          </article>
-          
-          <article class="card border-0 mb-2">
-          <a class="text-dark" href="product.html"> 
-            <div class="card-body row align-items-stretch no-gutters p-0">
-              <!-- News Blog Card -->
-              <div class="col-3 card-img-left border border-right-0">
-              	<div class="p-2"> <img alt="" src="assets/img/100x100/img2.jpg"> </div>
-              </div>
-              <div class="col-9 border border-left-0 rounded-right">
-                <div class="p-1">
-                  	가게2
-                </div>
-              </div>              
-            </div>
-            </a>
-            <!-- End News Blog Card -->
-          </article>
-        </div>
-        
-        <div class="card-deck d-block d-lg-flex">
-          <article class="card border-0 mb-2">
-          <a class="text-dark" href="product.html"> 
-            <div class="card-body row align-items-stretch no-gutters p-0">
-              <!-- News Blog Card -->
-              <div class="col-3 card-img-left border border-right-0">
-              	<div class="p-2"> <img alt="" src="assets/img/100x100/img3.jpg"> </div>
-              </div>
-              <div class="col-9 border border-left-0 rounded-right">
-                <div class="p-1">
-                  	가게3
-                </div>
-              </div>              
-            </div>
-            </a>
-            <!-- End News Blog Card -->
-          </article>
-          
-          <article class="card border-0 mb-2">
-          <a class="text-dark" href="product.html"> 
-            <div class="card-body row align-items-stretch no-gutters p-0">
-              <!-- News Blog Card -->
-              <div class="col-3 card-img-left border border-right-0">
-              	<div class="p-2"> <img alt="" src="assets/img/100x100/img4.jpg"> </div>
-              </div>
-              <div class="col-9 border border-left-0 rounded-right">
-                <div class="p-1">
-                  	가게4
-                </div>
-              </div>              
-            </div>
-            </a>
-            <!-- End News Blog Card -->
-          </article>
-        </div>
-        <div class="card-deck d-block d-lg-flex">
-          <article class="card border-0 mb-2">
-          <a class="text-dark" href="product.html"> 
-            <div class="card-body row align-items-stretch no-gutters p-0">
-              <!-- News Blog Card -->
-              <div class="col-3 card-img-left border border-right-0">
-              	<div class="p-2"> <img alt="" src="assets/img/100x100/img5.jpg"> </div>
-              </div>
-              <div class="col-9 border border-left-0 rounded-right">
-                <div class="p-1">
-                  	가게5
-                </div>
-              </div>              
-            </div>
-            </a>
-            <!-- End News Blog Card -->
-          </article>
-          
-          <article class="card border-0 mb-2">
-          <a class="text-dark" href="product.html"> 
-            <div class="card-body row align-items-stretch no-gutters p-0">
-              <!-- News Blog Card -->
-              <div class="col-3 card-img-left border border-right-0">
-              	<div class="p-2"> <img alt="" src="assets/img/100x100/img6.jpg"> </div>
-              </div>
-              <div class="col-9 border border-left-0 rounded-right">
-                <div class="p-1">
-                  	가게6
-                </div>
-              </div>              
-            </div>
-            </a>
-            <!-- End News Blog Card -->
-          </article> 
-        </div>
+              <span class="col-sm-2 text-right input-group form-group mb-0">
+                  <select id="" class="form-control">
+                      <option selected="">가격순</option>
+                      <option>이름순</option>
+                  </select>
+              </span>
+          </div>
 
+          <div class="alert alert-warning" role="alert">
+              지금 <a href="#" class="alert-link">회원 로그인</a>을 하시면 더욱 저렴한 가격으로 구매 가능합니다.
+          </div>
 
+          <div class="card-deck d-block d-lg-flex">
+              <article class="card border-0 mb-2">
+                  <a href="product.html" class="text-dark">
 
+                      <div class="card-body row align-items-stretch no-gutters p-0">
+                      <!-- News Blog Card -->
+                          <div class="col-3 card-img-left border border-right-0 bg-img-hero" data-bg-img-src="assets/img/500x550/img4.jpg"></div>
+                          <div class="col-9 border border-left-0 rounded-right">
+                              <div class="p-5">
+                                  <h2 class="h5 mb-3">
+                                      참좋은계란
+                                  </h2>
+                                  <p class="mb-0">100판 얼마 1000판 얼마 배송지역 어디</p>
+                              </div>
+                          </div>
+                      </div>
+                  </a>
+                  <!-- End News Blog Card -->
+              </article>
+              <article class="card border-0 mb-2">
+                  <a href="product.html" class="text-dark">
 
+                      <div class="card-body row align-items-stretch no-gutters p-0">
+                          <!-- News Blog Card -->
+                          <div class="col-3 card-img-left border border-right-0 bg-img-hero" data-bg-img-src="assets/img/500x550/img4.jpg"></div>
+                          <div class="col-9 border border-left-0 rounded-right">
+                              <div class="p-5">
+                                  <h2 class="h5 mb-3">
+                                      참좋은계란
+                                  </h2>
+                                  <p class="mb-0">100판 얼마 1000판 얼마 배송지역 어디</p>
+                              </div>
+                          </div>
+                      </div>
+                  </a>
+                  <!-- End News Blog Card -->
+              </article>
+          </div>
+          <div class="card-deck d-block d-lg-flex">
+              <article class="card border-0 mb-2">
+                  <a href="product.html" class="text-dark">
+                      <div class="card-body row align-items-stretch no-gutters p-0">
+                          <!-- News Blog Card -->
+                          <div class="col-3 card-img-left border border-right-0 bg-img-hero" data-bg-img-src="assets/img/500x550/img4.jpg"></div>
+                          <div class="col-9 border border-left-0 rounded-right">
+                              <div class="p-5">
+                                  <h2 class="h5 mb-3">
+                                      참좋은계란
+                                  </h2>
+                                  <p class="mb-0">100판 얼마 1000판 얼마 배송지역 어디</p>
+                              </div>
+                          </div>
+                      </div>
+                  </a>
+                  <!-- End News Blog Card -->
+              </article>
+              <article class="card border-0 mb-2">
+                  <a href="product.html" class="text-dark">
 
+                      <div class="card-body row align-items-stretch no-gutters p-0">
+                          <!-- News Blog Card -->
+                          <div class="col-3 card-img-left border border-right-0 bg-img-hero" data-bg-img-src="assets/img/500x550/img4.jpg"></div>
+                          <div class="col-9 border border-left-0 rounded-right">
+                              <div class="p-5">
+                                  <h2 class="h5 mb-3">
+                                      참좋은계란
+                                  </h2>
+                                  <p class="mb-0">100판 얼마 1000판 얼마 배송지역 어디</p>
+                              </div>
+                          </div>
+                      </div>
+                  </a>
+                  <!-- End News Blog Card -->
+              </article>
+          </div>
+          <div class="card-deck d-block d-lg-flex">
+              <article class="card border-0 mb-2">
+                  <a href="product.html" class="text-dark">
 
-      </div>
-    </div>
-    <!-- End News Section -->
-<!-- 블로그 끝 -->
+                      <div class="card-body row align-items-stretch no-gutters p-0">
+                          <!-- News Blog Card -->
+                          <div class="col-3 card-img-left border border-right-0 bg-img-hero" data-bg-img-src="assets/img/500x550/img4.jpg"></div>
+                          <div class="col-9 border border-left-0 rounded-right">
+                              <div class="p-5">
+                                  <h2 class="h5 mb-3">
+                                      참좋은계란
+                                  </h2>
+                                  <p class="mb-0">100판 얼마 1000판 얼마 배송지역 어디</p>
+                              </div>
+                          </div>
+                      </div>
+                  </a>
+                  <!-- End News Blog Card -->
+              </article>
+              <article class="card border-0 mb-2">
+                  <a href="product.html" class="text-dark">
+
+                      <div class="card-body row align-items-stretch no-gutters p-0">
+                          <!-- News Blog Card -->
+                          <div class="col-3 card-img-left border border-right-0 bg-img-hero" data-bg-img-src="assets/img/500x550/img4.jpg"></div>
+                          <div class="col-9 border border-left-0 rounded-right">
+                              <div class="p-5">
+                                  <h2 class="h5 mb-3">
+                                      참좋은계란
+                                  </h2>
+                                  <p class="mb-0">100판 얼마 1000판 얼마 배송지역 어디</p>
+                              </div>
+                          </div>
+                      </div>
+                  </a>
+                  <!-- End News Blog Card -->
+              </article>
+          </div>
+
+          <div class="alert alert-primary mt-5" role="alert">
+              대리점
+          </div>
+          <div class="card-deck d-block d-lg-flex">
+              <article class="card border-0 mb-2">
+                  <a href="partner.html" class="text-dark">
+                      <div class="card-body row align-items-stretch no-gutters p-0">
+                          <!-- News Blog Card -->
+                          <div class="col-8 border border-right-0 ">
+                              <h2 class="h6">Details:</h2>
+                              <address class="mb-0">
+                                  <ul class="list-unstyled font-size-14 text-secondary mb-0">
+                                      <li class="py-1">972 Sylvan Street South Angelina, NL S0B2V9</li>
+                                      <li class="py-2"></li>
+                                      <li class="py-1">+(0161) 347 8854</li>
+                                      <li class="py-1">Email: <a href="#">Space.ca@support.com</a></li>
+                                      <li class="py-1">Website: <a href="#">Space.ca</a></li>
+                                  </ul>
+                              </address>
+                          </div>
+                          <div class="col-4 border border-left-0 rounded-right">
+                              <!-- Google Map -->
+                              <div id="GMap1" class="js-g-map embed-responsive embed-responsive-21by9 h-100"
+                                   data-type="static"
+                                   data-lat="35.8529195"
+                                   data-lng="128.5803867"
+                                   data-zoom="16"
+                                   data-pin="true"
+                                   data-pin-icon="assets/img/map-markers/map-marker6.png"></div>
+                              <!-- End Google Map -->
+                          </div>
+                      </div>
+                  </a>
+          <!-- End News Blog Card -->
+              </article>
+              <article class="card border-0 mb-2">
+                  <a href="partner.html" class="text-dark">
+                      <div class="card-body row align-items-stretch no-gutters p-0">
+                          <!-- News Blog Card -->
+                          <div class="col-8 border border-right-0 ">
+                              <h2 class="h6">Details:</h2>
+                              <address class="mb-0">
+                                  <ul class="list-unstyled font-size-14 text-secondary mb-0">
+                                      <li class="py-1">972 Sylvan Street South Angelina, NL S0B2V9</li>
+                                      <li class="py-2"></li>
+                                      <li class="py-1">+(0161) 347 8854</li>
+                                      <li class="py-1">Email: <a href="#">Space.ca@support.com</a></li>
+                                      <li class="py-1">Website: <a href="#">Space.ca</a></li>
+                                  </ul>
+                              </address>
+                          </div>
+                          <div class="col-4 border border-left-0 rounded-right">
+                              <!-- Google Map -->
+                              <div id="GMap1" class="js-g-map embed-responsive embed-responsive-21by9 h-100"
+                                   data-type="static"
+                                   data-lat="35.8529195"
+                                   data-lng="128.5803867"
+                                   data-zoom="16"
+                                   data-pin="true"
+                                   data-pin-icon="assets/img/map-markers/map-marker6.png"></div>
+                              <!-- End Google Map -->
+                          </div>
+                      </div>
+                  </a>
+                  <!-- End News Blog Card -->
+              </article>
+          </div>
+          <div class="card-deck border d-block d-lg-flex">
+              <div class="col-lg-6 mb-7 mb-lg-0">
+                  <!-- Contacts Info -->
+                  <div class="row">
+                      <div class="col-sm-6 mb-4 mb-sm-0">
+                          <h2 class="h6">Details:</h2>
+                          <address class="mb-0">
+                              <ul class="list-unstyled font-size-14 text-secondary mb-0">
+                                  <li class="py-1">972 Sylvan Street South Angelina, NL S0B2V9</li>
+                                  <li class="py-2"></li>
+                                  <li class="py-1">+(0161) 347 8854</li>
+                                  <li class="py-1">Email: <a href="#">Space.ca@support.com</a></li>
+                                  <li class="py-1">Website: <a href="#">Space.ca</a></li>
+                              </ul>
+                          </address>
+                      </div>
+                      <div class="col-sm-6">
+                          <h3 class="h6">Business hours:</h3>
+                          <span class="d-block font-size-14 text-secondary mb-3">Mon - Sat: 9.30AM - 06.00PM</span>
+                          <img class="img-fluid" src="assets/img/400x180/img1.jpg" alt="Image Description">
+                      </div>
+                  </div>
+                  <!-- End Contacts Info -->
+              </div>
+              <div class="col-lg-6">
+                  <!-- Google Map -->
+                  <div id="GMap1" class="js-g-map embed-responsive embed-responsive-21by9 h-100"
+                       data-type="static"
+                       data-lat="35.8529195"
+                       data-lng="128.5803867"
+                       data-zoom="16"
+                       data-pin="true"
+                       data-pin-icon="assets/img/map-markers/map-marker6.png"></div>
+                  <!-- End Google Map -->
+              </div>
+          </div>
+
+          <div class="alert alert-secondary mt-5" role="alert">
+              협력사
+          </div>
+          <div class="row">
+              <div class="col-lg-6 mb-7 mb-lg-0">
+                  <!-- Contacts Info -->
+                  <h1 class="h4 mb-4">Canada</h1>
+
+                  <div class="row">
+                      <div class="col-sm-6 mb-4 mb-sm-0">
+                          <h2 class="h6">Details:</h2>
+                          <address class="mb-0">
+                              <ul class="list-unstyled font-size-14 text-secondary mb-0">
+                                  <li class="py-1">972 Sylvan Street South Angelina, NL S0B2V9</li>
+                                  <li class="py-2"></li>
+                                  <li class="py-1">+(0161) 347 8854</li>
+                                  <li class="py-1">Email: <a href="#">Space.ca@support.com</a></li>
+                                  <li class="py-1">Website: <a href="#">Space.ca</a></li>
+                              </ul>
+                          </address>
+                      </div>
+
+                      <div class="col-sm-6">
+                          <h3 class="h6">Business hours:</h3>
+                          <span class="d-block font-size-14 text-secondary mb-3">Mon - Sat: 9.30AM - 06.00PM</span>
+                          <img class="img-fluid" src="assets/img/400x180/img1.jpg" alt="Image Description">
+                      </div>
+                  </div>
+                  <!-- End Contacts Info -->
+              </div>
+
+              <div class="col-lg-6">
+                  <!-- Google Map -->
+                  <div id="GMap1" class="js-g-map embed-responsive embed-responsive-21by9 h-100"
+                       data-type="custom"
+                       data-lat="40.674"
+                       data-lng="-73.946"
+                       data-zoom="12"
+                       data-title="Agency"
+                       data-styles='[["", "", [{"saturation":-100},{"lightness":51},{"visibility":"simplified"}]], ["", "labels", [{"visibility":"on"}]], ["water", "", [{"color":"#bac6cb"}]] ]'
+                       data-pin="true"
+                       data-pin-icon="assets/img/map-markers/map-marker1.png"></div>
+                  <!-- End Google Map -->
+              </div>
+          </div>
+
 
 
 <!-- Features Section -->
@@ -569,6 +684,7 @@
   <script src="assets/vendor/custombox/dist/custombox.min.js"></script>
   <script src="assets/vendor/custombox/dist/custombox.legacy.min.js"></script>
   <script src="assets/vendor/bootstrap/bootstrap-slider.min.js"></script>
+  <script src="assets/vendor/gmaps/gmaps.min.js"></script>
 
   <!-- JS Space -->
   <script src="assets/js/hs.core.js"></script>
@@ -580,6 +696,7 @@
   <script src="assets/js/components/hs.modal-window.js"></script>
   <script src="assets/js/components/hs.show-animation.js"></script>
   <script src="assets/js/components/hs.go-to.js"></script>
+  <script src="assets/js/components/hs.g-map.js"></script>
 
   <script src="assets/vendor/nouislider/nouislider.js"></script>
 
@@ -634,38 +751,13 @@
 
     });
     
-	    var nonLinearSlider = document.getElementById('slider');
-
-	    noUiSlider.create(nonLinearSlider, {
-	        connect: true,
-	        behaviour: 'tap',
-	        start: [0, 10000],
-	        range: {
-	            // Starting at 500, step the value by 500,
-	            // until 4000 is reached. From there, step by 1000.
-	            'min': [0,100],
-	            '10%': [500, 500],
-	            '50%': [4000, 1000],
-	            'max': [10000]
-	        }
-	    });
-	    
-	    var nodes = [0,1];
-// 	        document.getElementById('lower-value'), // 0
-// 	        document.getElementById('upper-value')  // 1
-// 	    ];
-
-	    // Display the slider value and how far the handle moved
-	    // from the left edge of the slider.
-	    nonLinearSlider.noUiSlider.on('update', function (values, handle, unencoded, isTap, positions) {
-	    	if (handle == 0) {
-	    	$("#slider1").val(values[handle]);
-			} else {
-	    	$("#slider2").val(values[handle]);
-			}
-	        //nodes[handle].innerHTML = values[handle] + ', ' + positions[handle].toFixed(2) + '%';
-	    });
+    // initialization of google map
+    function initMap() {
+        $.HSCore.components.HSGMap.init('.js-g-map');
+    }
   </script>
+
+  <script src="//maps.googleapis.com/maps/api/js?key=AIzaSyAtt1z99GtrHZt_IcnK-wryNsQ30A112J0&callback=initMap" async defer></script>
 
 </body>
 </html>
